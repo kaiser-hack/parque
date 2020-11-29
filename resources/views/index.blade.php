@@ -13,6 +13,8 @@
 
 
 <table class="table table-borderless">
+  <h2 class="dispaly-4"> Lista de Estudiante</h2>
+    <hr>
     <thead>
       <tr>
         <th scope="col">N°</th>
