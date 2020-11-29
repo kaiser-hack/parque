@@ -22,12 +22,7 @@ class EstudiantesController extends Controller
         return view('create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    
 
     //con esta linea de codigo recogemos los datos del formulario y lo enviamos a la base de datos
     public function store(Request $request)
@@ -49,6 +44,7 @@ class EstudiantesController extends Controller
 
     }
 
+    //esta linea de codigo trae los datos de la base de datos y los listay envia a la vista index
     public function lista()
     {
         $estudiante = Estudiante::get();

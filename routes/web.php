@@ -11,8 +11,11 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/Route::get('/', 'EstudiantesController@index')->name('index');
+*/
+//esta linea llama al controlador y la ruta a usar
+Route::get('/', 'EstudiantesController@index')->name('index');
 
-
+//esta linea de codigo genera toda las rutas del recurso
 Route::resource('estudiante', 'EstudiantesController');
+//esta ruta genera la url y el controlador del recurso
 Route::get ('/lista', 'EstudiantesController@lista')->name('estudiante.lista');
