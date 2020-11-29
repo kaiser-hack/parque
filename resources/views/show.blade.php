@@ -6,7 +6,7 @@
 <h3>Hola, {{$estudiante->nombre}}</h3>
 <br>
 
-<p>Segun los datos que nos has proporcionado sabemos que tienes, {{$estudiante->edad}} años de edad </p>
+<p>Segun los datos que nos has proporcionado sabemos que tienes, {{$estudiante->edad}} años de edad tu signo zoodiacal es {!!$estudiante->signo!!} </p>
 
 <p>tu correo es: {{$estudiante->correo}}  y tu sexo es {{$estudiante->sexo}} </p>
 

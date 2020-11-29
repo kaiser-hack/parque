@@ -21,6 +21,7 @@
         <th scope="col">Nombre</th>
         <th scope="col">Apellido</th>
         <th scope="col">Correo</th>
+        <th scope="col">Signo</th>
         <th scope="col">Action</th>
       </tr>
     </thead>
@@ -31,6 +32,7 @@
         <td><a href="{{route('estudiante.show', $item)}} ">{{$item->nombre}}</a></td>
         <td>{{$item->apellido}}</td>
         <td>{{$item->correo}}</td>
+        <td>{!!$item->signo!!}</td>
         <td>  <div class="btn-toolbar">  
             <a href="{{route('estudiante.edit', $item->id)}}"><button class="btn btn- btn-success mx-1">Editar</button></a>
             

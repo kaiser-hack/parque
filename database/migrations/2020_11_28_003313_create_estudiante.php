@@ -19,7 +19,8 @@ class CreateEstudiante extends Migration
             $table->string('apellido')->nullable();
             $table->integer('edad')->nullable();
             $table->string('correo')->nullable();
-            $table->string('sexo')->nullable();            
+            $table->string('sexo')->nullable(); 
+            $table->string('signo')->nullable();            
 
             $table->timestamps();
         });
