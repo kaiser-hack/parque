@@ -37,7 +37,8 @@ class EstudiantesController extends Controller
         $estudiante->apellido = $request->input('apellido');
         $estudiante->correo = $request->input('correo');
         $estudiante->sexo = $request->input('sexo');
-        $estudiante->edad = $anios;  
+        $estudiante->edad = $anios;
+          
          //en estas lineas de codigo podemos observar como carbon permite la manipulacion de datos tipos date para la implementacion de funcionalidades
          $date = Carbon::parse($request->input('fecha_nacimiento'));
          $mes = $date->format('m');   
